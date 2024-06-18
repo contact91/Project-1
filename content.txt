@@ -1,0 +1,84 @@
+CARDS CONTENT:
+
+1°
+
+TITLE:
+
+"HTML BURGER"
+
+PARAGRAPH:
+
+"Our main Burger made with the original Pixel Burger© receipe.
+Only beef without chemical additions. With Pachino tomatoes,
+ Cheddar and our special onion-flavoured Pixel sauce. In medium and large versions (with double meat)."
+
+
+2°
+
+TITLE:
+
+"JS BURGER"
+
+PARAGRAPH:
+
+"The interactive burger that you can develop on yourself: 
+you can choose between beef, chicken or fish and add 2-3 from the freshest ingredients we have, such as 
+Pachino tomatoes, Iceberg lattuce, Onions, Cucumber and so on..."
+
+
+3°
+
+TITLE:
+
+"CSS BURGER"
+
+PARAGRAPH:
+
+"Our style burger made with the most elaborate yet elegant ingredients.
+With breaded fish (cod), light lemon flavoured sauce and fried potato leaves.
+For the finest palates."
+
+
+
+4°
+
+
+TITLE:
+
+"ASIDE SALAD"
+
+PARAGRAPH:
+
+"Our fresh Iceberg salad with fresh cheese, olives and strips of free-rage chicken
+with dressing and sprinkling of chopped Macadamia nuts."
+
+
+5°
+
+TITLE:
+
+"SPAN SALAD"
+
+PARAGRAPH:
+
+"A protein-rich salad with fried eggs, courgettes, cherry tomatoes and bacon cubes."
+
+
+6°
+
+TITLE:
+
+"FLEX MILKSHAKE"
+
+PARAGRAPH:
+
+"Our super-flexible milkshake with a vast choice of flavors and types of milk, including soy, oat, coconut...
+Made with fresh fruit and fruit-based toppings.
+
+
+ABOUT:
+
+Our company was born from the idea of two Web Developers who decided to completely change their careeers
+after realizing that, for them, the lunch break was more important than coding.
+Born in Berlin way back in 1999, and located in the industrial district, Pixel Burger© remains one of the favorite destinations
+for workers on the move who love to relax, satisfying their appetites with authenticity, style and excellent value for money.
