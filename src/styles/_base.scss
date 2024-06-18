@@ -1,5 +1,57 @@
+@import "variables";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+
+.container-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  background-color: var(--background);
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.menu-button {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-button-link {
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (min-width: 768px){
+  .container-menu {
+    flex-direction: row;
+  }
+  
 }
