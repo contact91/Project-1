@@ -1,4 +1,4 @@
-@import "variables";
+/*Style bases for body, header, footer*/
 * {
   margin: 0;
   padding: 0;
@@ -49,17 +49,42 @@ header h1 {
   color: white;
   margin: 0;
 }
-// main .carousel-section {
-//   width: 100%;
-//   overflow: hidden;
-//   margin-top: 20px;
-// }
 nav ul {
   display: none;
 }
 main {
-  margin: 90px 0;
+  margin: 140px 0;
 }
+.map {
+  width: 80%;
+  margin: auto;
+  border: 1px solid red;
+  display: flex;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.menu-button {
+  font-size: 1.2rem;
+  background-color: white;
+  width: 150px;
+  height: 70px;
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.menu-button:hover {
+  transform: scale(1.3);
+  transition: 1s;
+}
+
 footer {
   padding-top: 15px;
   background-color: black;
@@ -74,18 +99,62 @@ footer {
   color: white;
   align-items: center;
 }
-footer ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  width: 400px;
-}
 footer a {
   color: white;
 }
 footer p {
   margin: 0;
 }
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+}
+@media screen and (min-width: 768px) {
+  header h1 {
+    font-size: 3vh;
+    color: white;
+  }
+  header .menu-icon {
+    display: none;
+  }
+  nav ul {
+    font-size: 1.5rem;
+    display: flex;
+    color: white;
+    list-style: none;
+    width: 70%;
+    justify-content: space-around;
+  }
+
+  header {
+    height: 15vh;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  nav img {
+    height: 50px;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+  nav li:hover {
+    transform: scale(1.5);
+
+    transition: 1s;
+  }
+  nav a:hover {
+    color: #e19200;
+  }
+}
+/*End of Style bases for body, header, footer*/
+/* Start of social media styles */
 .transparent {
   border: 1px solid red;
   width: 100%;
@@ -166,7 +235,6 @@ footer p {
   position: fixed;
   bottom: 45vh;
   right: 0;
-  // display: block;
   height: 75px;
   width: 75px;
 
@@ -180,12 +248,6 @@ footer p {
   transform: scale(1.5) translateX(-20px);
   transition: 1s;
 }
-.menu {
-  background-color: #202020;
-  padding: 30px 20px;
-  margin: 30px 20px;
-}
-
 @media (max-width: 768px) {
   .socialmedia a {
     display: block;
@@ -200,125 +262,4 @@ footer p {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
-  // main {
-  //   margin: 10vh;
-  // }
-  // main .carousel-section {
-  //   margin-top: 30px;
-  // }
-  .menu {
-    background-color: #202020;
-    padding: 30px 20px;
-    margin: 30px 30vh;
-  }
-
-  section {
-    margin: 60px 0;
-  }
-  header h1 {
-    font-size: 3vh;
-    color: white;
-  }
-  header .menu-icon {
-    display: none;
-  }
-  nav ul {
-    font-size: 1.5rem;
-    display: flex;
-    color: white;
-    list-style: none;
-    width: 70%;
-    justify-content: space-around;
-  }
-  nav a {
-    text-decoration: none;
-    color: white;
-  }
-  nav li:hover {
-    transform: scale(1.5);
-
-    transition: 1s;
-  }
-  nav a:hover {
-    color: #e19200;
-  }
-  main {
-    margin: 15vh 0;
-  }
-  header {
-    height: 15vh;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-  }
-  nav img {
-    height: 50px;
-  }
-}
-
-.container-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-main .card {
-  background-color: #e19200;
-  width: 300px;
-  height: 300px;
-
-  border-radius: 10px;
-  margin: 10px;
-  display: flex;
-
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.card-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  text-align: center;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  width: 100%;
-}
-
-.menu-button {
-  font-size: 1.2rem;
-  background-color: white;
-  width: 150px;
-  height: 70px;
-  display: flex;
-  border-radius: 15px;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-}
-.menu-button:hover {
-  transform: scale(1.3);
-  transition: 1s;
-}
-
-.menu-button-link {
-  text-decoration: none;
-  color: #000;
-}
-
-@media screen and (min-width: 768px) {
-  .container-menu {
-    flex-direction: row;
-  }
-}
+/* End of social media styles */
