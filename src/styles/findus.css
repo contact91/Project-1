@@ -53,12 +53,11 @@ nav ul {
   display: none;
 }
 main {
-  margin: 140px 0;
+  margin: 15vh 0;
 }
 .map {
   width: 80%;
   margin: auto;
-  border: 1px solid red;
   display: flex;
 }
 .button-container {
@@ -72,17 +71,18 @@ main {
 .menu-button {
   font-size: 1.2rem;
   background-color: white;
-  width: 150px;
-  height: 70px;
+  width: 250px;
+  height: 60px;
   display: flex;
   border-radius: 15px;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 10px;
 }
 .menu-button:hover {
-  transform: scale(1.3);
-  transition: 1s;
+  transform: scale(1.1);
+  transition: .3s;
 }
 
 footer {
