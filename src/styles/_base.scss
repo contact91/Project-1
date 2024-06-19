@@ -17,24 +17,30 @@ body p {
 
 header {
   background-color: black;
-  height: 8vh;
+  height: 70px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+  padding-right: 10px;
 }
 nav img {
   height: 50px;
+}
+.carousel-section {
+  margin-top: 70px;
 }
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  padding-right: 20px;
   font-family: "Pixelify Sans", sans-serif;
-  padding: 10px 20px;
+  padding: 10px;
+  padding-left: 0;
 }
+
 h2,
 h3,
 h4 {
@@ -58,12 +64,20 @@ nav ul {
   display: none;
 }
 main {
-  margin: 90px 0;
+  margin-top: 30px;
+  margin-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer ul {
+  padding: 0 10px;
 }
 footer {
-  padding-top: 15px;
+  padding-top: 10px;
   background-color: black;
-  height: 10vh;
+  height: 70px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -73,6 +87,7 @@ footer {
   flex-direction: column;
   color: white;
   align-items: center;
+  font-size: 12px;
 }
 footer ul {
   list-style: none;
@@ -184,9 +199,10 @@ footer p {
   background-color: #202020;
   padding: 30px 20px;
   margin: 30px 20px;
+  width: fit-content;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .socialmedia a {
     display: block;
     text-align: center;
@@ -200,7 +216,7 @@ footer p {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 993px) {
   // main {
   //   margin: 10vh;
   // }
@@ -210,12 +226,15 @@ footer p {
   .menu {
     background-color: #202020;
     padding: 30px 20px;
-    margin: 30px 30vh;
+    margin: 30px;
+    width: fit-content;
   }
-
-  section {
-    margin: 60px 0;
+  .carousel-section {
+    margin-top: 150px;
   }
+  // section {
+  //   margin: 60px 0;
+  // }
   header h1 {
     font-size: 3vh;
     color: white;
@@ -230,6 +249,7 @@ footer p {
     list-style: none;
     width: 70%;
     justify-content: space-around;
+    margin: 0;
   }
   nav a {
     text-decoration: none;
@@ -244,10 +264,13 @@ footer p {
     color: #e19200;
   }
   main {
-    margin: 15vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   header {
-    height: 15vh;
+    height: 150px;
+    padding: 10px 0;
   }
   nav {
     display: flex;
@@ -317,7 +340,7 @@ main .card {
   color: #000;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 993px) {
   .container-menu {
     flex-direction: row;
   }
