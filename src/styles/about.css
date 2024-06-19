@@ -53,7 +53,10 @@ nav ul {
   display: none;
 }
 main {
-  margin: 90px 0;
+  margin: 15vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 footer {
   padding-top: 15px;
@@ -233,3 +236,37 @@ footer ul {
   }
 }
 /* End of social media styles */
+.about-section {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  background-color: #202020;
+  color: #e19200;
+  width: 80vw;
+  margin-top: 70px;
+  overflow: hidden;
+}
+
+.about-img {
+
+  margin-bottom: 70px;
+
+}
+
+.about-text{
+  width: 50%;
+  height: 50%;
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    flex-direction: row;
+  }
+
+  .about-text {
+    margin-left: 20px;
+  }
+}
