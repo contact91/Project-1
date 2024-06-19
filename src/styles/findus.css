@@ -53,8 +53,38 @@ nav ul {
   display: none;
 }
 main {
-  margin: 90px 0;
+  margin: 15vh 0;
 }
+.map {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.menu-button {
+  font-size: 1.2rem;
+  background-color: white;
+  width: 250px;
+  height: 60px;
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+.menu-button:hover {
+  transform: scale(1.1);
+  transition: .3s;
+}
+
 footer {
   padding-top: 15px;
   background-color: black;
