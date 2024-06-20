@@ -17,12 +17,13 @@ body p {
 
 header {
   background-color: black;
-  height: 8vh;
+  height: 70px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+  padding-right: 10px;
 }
 nav img {
   height: 50px;
@@ -31,9 +32,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
   font-family: "Pixelify Sans", sans-serif;
-  padding: 10px 20px;
+  padding: 10px;
+  padding-left: 0;
 }
 h2,
 h3,
@@ -51,6 +52,7 @@ header h1 {
 }
 nav ul {
   display: none;
+  margin: 0;
 }
 main {
   margin: 15vh 0;
@@ -86,9 +88,9 @@ main {
 }
 
 footer {
-  padding-top: 15px;
+  padding-top: 10px;
   background-color: black;
-  height: 10vh;
+  height: 70px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -98,7 +100,9 @@ footer {
   flex-direction: column;
   color: white;
   align-items: center;
+  font-size: 12px;
 }
+
 footer a {
   color: white;
 }
@@ -129,7 +133,8 @@ footer ul {
   }
 
   header {
-    height: 15vh;
+    height: 150px;
+    padding: 10px 0;
   }
   nav {
     display: flex;
@@ -151,6 +156,9 @@ footer ul {
   }
   nav a:hover {
     color: #e19200;
+  }
+  main {
+    margin: 230px 0;
   }
 }
 /*End of Style bases for body, header, footer*/
