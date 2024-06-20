@@ -16,24 +16,38 @@ body p {
 }
 
 header {
-  background-color: black;
+  /* background-color: black;
   height: 8vh;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1; */
+  background-color: black;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
+  padding-right: 10px;
 }
 nav img {
   height: 50px;
 }
 nav {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
   font-family: "Pixelify Sans", sans-serif;
-  padding: 10px 20px;
+  padding: 10px 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Pixelify Sans", sans-serif;
+  padding: 10px;
+  padding-left: 0;
 }
 h2,
 h3,
@@ -51,12 +65,13 @@ header h1 {
 }
 nav ul {
   display: none;
+  margin: 0;
 }
 main {
   margin: 90px 0;
 }
 footer {
-  padding-top: 15px;
+  /* padding-top: 15px;
   background-color: black;
   height: 10vh;
   position: fixed;
@@ -67,7 +82,20 @@ footer {
   display: flex;
   flex-direction: column;
   color: white;
+  align-items: center; */
+  padding-top: 10px;
+  background-color: black;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  color: white;
   align-items: center;
+  font-size: 12px;
 }
 footer a {
   color: white;
@@ -81,7 +109,7 @@ footer ul {
   justify-content: space-around;
   width: 400px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 993px) {
   header h1 {
     font-size: 3vh;
     color: white;
@@ -99,7 +127,9 @@ footer ul {
   }
 
   header {
-    height: 15vh;
+    /* height: 15vh; */
+    height: 150px;
+    padding: 10px 0;
   }
   nav {
     display: flex;
@@ -218,7 +248,7 @@ footer ul {
   transform: scale(1.5) translateX(-20px);
   transition: 1s;
 }
-@media (max-width: 768px) {
+@media (max-width: 993px) {
   .socialmedia a {
     display: block;
     text-align: center;
@@ -233,3 +263,139 @@ footer ul {
   }
 }
 /* End of social media styles */
+
+/*Nausica code*/
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-sec {
+  width: 70vw;
+
+}
+
+.card-sec{
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-menu {
+  background-color: #e19200;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-bottom: 5vh;
+  overflow: hidden;
+  box-shadow: 0 0 10px black;
+  width: 80%;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.title {
+  color: #e19200;
+  text-align: center;
+  font-size: 2rem;
+  color: #920e00;
+  text-shadow: 1px 1px black;
+  margin-bottom: 20px;
+}
+
+.para-div {
+  color: #202020;
+  margin-top: 2rem;
+  padding-left: 10px;
+}
+
+.menu-title {
+  background-color: rgba(0, 0, 0, 0.678);
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  color: #e19200;
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 3px 3px white, -3px -3px black;
+}
+
+
+
+.menu-pic {
+  width: 100%;
+}
+
+.ordernow{
+  text-align: right;
+  
+}
+
+.ordernow a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+
+}
+
+.ordernow button{
+  background-color: #920e00;
+  position: absolute;
+  bottom: -50px;
+  right: -60px;
+  width: 130px;
+  text-align: left;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  height: 130px;
+  border: none;
+  border-radius: 50%
+
+}
+
+.ordernow button:hover{
+  background-color: white;
+  box-shadow: 0 0 10px #202020;
+}
+
+.ordernow button:hover a{
+  color: #920e00;
+  font-size: bold;
+}
+
+select{
+border-radius: 5px;
+}
+
+header i{
+  font-size: 35px;
+}
+
+@media (min-width: 993px){
+
+main{
+  margin-top: 15vh;
+}
+
+.card-menu{
+  flex-direction: row;
+  padding-bottom: 0;
+
+}
+
+.card-menu p{
+  font-size: 1.2rem;
+}
+
+.card-menu h3{
+  font-size: 2.5rem;
+}
+
+.menu-pic{
+ width:50%
+}
+
+}
