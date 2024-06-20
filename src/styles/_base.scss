@@ -354,9 +354,12 @@ main .card {
   text-decoration: none;
   color: #000;
 }
-
+.container-menu a {
+  text-decoration: none;
+}
 @media screen and (min-width: 993px) {
   .container-menu {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
