@@ -85,7 +85,7 @@ footer ul {
   justify-content: space-around;
   width: 400px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 993px) {
   footer {
     padding-top: 10px;
     background-color: black;
@@ -245,7 +245,7 @@ footer ul {
   transform: scale(1.5) translateX(-20px);
   transition: 1s;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .socialmedia a {
     display: block;
     text-align: center;
@@ -270,24 +270,22 @@ footer ul {
   width: 80vw;
   margin-top: 70px;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
-.about-img {
-
-  margin-bottom: 70px;
-
-}
 
 .about-text{
+  display: flex;
+  flex-direction: column;
   width: 50%;
   height: 50%;
-  margin-bottom: 70px;
   margin-top: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .about-section {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .about-text {
