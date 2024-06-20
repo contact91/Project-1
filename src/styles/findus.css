@@ -84,7 +84,7 @@ main {
 }
 .menu-button:hover {
   transform: scale(1.1);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 footer {
@@ -115,7 +115,7 @@ footer ul {
   justify-content: space-around;
   width: 400px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 993px) {
   header h1 {
     font-size: 3vh;
     color: white;
@@ -180,9 +180,10 @@ footer ul {
 .socialmedia a {
   display: block;
   text-align: center;
-  padding: 16px;
+  padding: 12px;
+  transition: all 0.3s ease;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .socialmedia a:hover {
@@ -243,31 +244,41 @@ footer ul {
   position: fixed;
   bottom: 45vh;
   right: 0;
-  height: 75px;
-  width: 75px;
-
+  height: 60px;
+  width: 60px;
   background-color: #0dc600;
   color: white;
   border: 3px solid white;
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: 700;
 }
-.orderhere:hover {
-  transform: scale(1.5) translateX(-20px);
-  transition: 1s;
-}
-@media (max-width: 768px) {
+
+@media (min-width: 993px) {
   .socialmedia a {
     display: block;
     text-align: center;
-    padding: 12px;
+    padding: 16px;
     transition: all 0.3s ease;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .orderhere {
-    display: none;
+    position: fixed;
+    bottom: 45vh;
+    right: 0;
+    height: 75px;
+    width: 75px;
+    background-color: #0dc600;
+    color: white;
+    border: 3px solid white;
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  .orderhere:hover {
+    transform: scale(1.1) translateX(-3px);
+    transition: 1s;
   }
 }
 /* End of social media styles */
