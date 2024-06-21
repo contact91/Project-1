@@ -16,7 +16,7 @@ body p {
 
 header {
   background-color: black;
-  height: 8vh;
+  height: 70px;
   position: fixed;
   top: 0;
   left: 0;
@@ -33,6 +33,7 @@ nav {
   padding: 20px 0;
   font-family: "Pixelify Sans", sans-serif;
   padding: 10px 20px;
+  padding-left: 0;
 }
 h2,
 h3,
@@ -55,9 +56,9 @@ main {
   margin: 90px 0;
 }
 footer {
-  padding-top: 15px;
+  padding-top: 10px;
   background-color: black;
-  height: 10vh;
+  height: 70px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -67,9 +68,13 @@ footer {
   flex-direction: column;
   color: white;
   align-items: center;
+  font-size: 12px;
 }
 footer a {
   color: white;
+}
+main ul {
+  padding: 0;
 }
 footer p {
   margin: 0;
@@ -77,51 +82,40 @@ footer p {
 footer ul {
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  width: 350px;
+  padding: 0;
+}
+
+header h1 {
+  font-size: 3vh;
+  color: white;
+}
+header .menu-icon {
+  display: none;
+}
+nav ul {
+  font-size: 1.5rem;
+  display: flex;
+  color: white;
+  list-style: none;
+  width: 70%;
   justify-content: space-around;
-  width: 400px;
 }
-@media screen and (min-width: 768px) {
-  header h1 {
-    font-size: 3vh;
-    color: white;
-  }
-  header .menu-icon {
-    display: none;
-  }
-  nav ul {
-    font-size: 1.5rem;
-    display: flex;
-    color: white;
-    list-style: none;
-    width: 70%;
-    justify-content: space-around;
-  }
 
-  header {
-    height: 15vh;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-  }
-  nav img {
-    height: 50px;
-  }
-  nav a {
-    text-decoration: none;
-    color: white;
-  }
-  nav li:hover {
-    transform: scale(1.5);
-
-    transition: 1s;
-  }
-  nav a:hover {
-    color: #e19200;
-  }
+header {
+  height: 70px;
 }
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+nav img {
+  height: 50px;
+}
+
 /*End of Style bases for body,header,footer*/
 main {
   background-color: black;

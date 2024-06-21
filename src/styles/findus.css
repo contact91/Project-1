@@ -17,12 +17,13 @@ body p {
 
 header {
   background-color: black;
-  height: 8vh;
+  height: 70px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+  padding-right: 10px;
 }
 nav img {
   height: 50px;
@@ -31,9 +32,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
   font-family: "Pixelify Sans", sans-serif;
-  padding: 10px 20px;
+  padding: 10px;
+  padding-left: 0;
 }
 h2,
 h3,
@@ -51,14 +52,45 @@ header h1 {
 }
 nav ul {
   display: none;
+  margin: 0;
 }
 main {
-  margin: 90px 0;
+  margin: 15vh 0;
 }
+.map {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.menu-button {
+  font-size: 1.2rem;
+  background-color: white;
+  width: 250px;
+  height: 60px;
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+.menu-button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
 footer {
-  padding-top: 15px;
+  padding-top: 10px;
   background-color: black;
-  height: 10vh;
+  height: 70px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -68,7 +100,9 @@ footer {
   flex-direction: column;
   color: white;
   align-items: center;
+  font-size: 12px;
 }
+
 footer a {
   color: white;
 }
@@ -81,7 +115,7 @@ footer ul {
   justify-content: space-around;
   width: 400px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 993px) {
   header h1 {
     font-size: 3vh;
     color: white;
@@ -99,7 +133,8 @@ footer ul {
   }
 
   header {
-    height: 15vh;
+    height: 150px;
+    padding: 10px 0;
   }
   nav {
     display: flex;
@@ -122,6 +157,9 @@ footer ul {
   nav a:hover {
     color: #e19200;
   }
+  main {
+    margin: 230px 0;
+  }
 }
 /*End of Style bases for body, header, footer*/
 /* Start of social media styles */
@@ -142,9 +180,10 @@ footer ul {
 .socialmedia a {
   display: block;
   text-align: center;
-  padding: 16px;
+  padding: 12px;
+  transition: all 0.3s ease;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .socialmedia a:hover {
@@ -205,31 +244,41 @@ footer ul {
   position: fixed;
   bottom: 45vh;
   right: 0;
-  height: 75px;
-  width: 75px;
-
+  height: 60px;
+  width: 60px;
   background-color: #0dc600;
   color: white;
   border: 3px solid white;
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: 700;
 }
-.orderhere:hover {
-  transform: scale(1.5) translateX(-20px);
-  transition: 1s;
-}
-@media (max-width: 768px) {
+
+@media (min-width: 993px) {
   .socialmedia a {
     display: block;
     text-align: center;
-    padding: 12px;
+    padding: 16px;
     transition: all 0.3s ease;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .orderhere {
-    display: none;
+    position: fixed;
+    bottom: 45vh;
+    right: 0;
+    height: 75px;
+    width: 75px;
+    background-color: #0dc600;
+    color: white;
+    border: 3px solid white;
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  .orderhere:hover {
+    transform: scale(1.1) translateX(-3px);
+    transition: 1s;
   }
 }
 /* End of social media styles */

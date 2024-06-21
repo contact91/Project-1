@@ -17,12 +17,13 @@ body p {
 
 header {
   background-color: black;
-  height: 8vh;
+  height: 70px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+  padding-right: 10px;
 }
 nav img {
   height: 50px;
@@ -31,9 +32,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
   font-family: "Pixelify Sans", sans-serif;
-  padding: 10px 20px;
+  padding: 10px;
+  padding-left: 0;
 }
 h2,
 h3,
@@ -51,14 +52,31 @@ header h1 {
 }
 nav ul {
   display: none;
+  margin: 0;
 }
+.gallery-grid {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+}
+.grid-item {
+}
+.grid-item img {
+  width: 100%;
+  margin: 5px 0;
+}
+
 main {
-  margin: 90px 0;
+  margin: 90px 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 footer {
-  padding-top: 15px;
+  padding-top: 10px;
   background-color: black;
-  height: 10vh;
+  height: 70px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -68,6 +86,7 @@ footer {
   flex-direction: column;
   color: white;
   align-items: center;
+  font-size: 12px;
 }
 footer a {
   color: white;
@@ -81,7 +100,63 @@ footer ul {
   justify-content: space-around;
   width: 400px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 993px) {
+  main {
+    margin-top: 170px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+  }
+  .grid-item {
+  }
+  .grid-item img {
+    width: 100%;
+    margin: 5px 0;
+    height: 100%;
+  }
+  .item1 {
+    grid-area: 2 / 3 / 4 / 5;
+  }
+  .item2 {
+    grid-area: 7 / 3 / 9 / 5;
+  }
+  .item3 {
+    grid-area: 1 / 1 / 3 / 3;
+  }
+  .item4 {
+    grid-area: 1 / 3 / 2 / 5;
+  }
+  .item5 {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+  .item6 {
+    grid-area: 6/1/7/3;
+  }
+  .item10 {
+    grid-area: 6/4/7/5;
+  }
+  .item11 {
+    grid-area: 8/1/10/3;
+  }
+  .item12 {
+    grid-area: 4 / 1 / 6 / 3;
+  }
+
+  .item15 {
+    grid-area: 10/1/14/5;
+  }
+  .item16 {
+    grid-area: 4/3/6/5;
+  }
+
   header h1 {
     font-size: 3vh;
     color: white;
@@ -99,7 +174,8 @@ footer ul {
   }
 
   header {
-    height: 15vh;
+    height: 150px;
+    padding: 10px 0;
   }
   nav {
     display: flex;
@@ -218,7 +294,7 @@ footer ul {
   transform: scale(1.5) translateX(-20px);
   transition: 1s;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .socialmedia a {
     display: block;
     text-align: center;
