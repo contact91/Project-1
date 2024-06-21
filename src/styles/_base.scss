@@ -36,7 +36,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   font-family: "Pixelify Sans", sans-serif;
-  padding: 10px;
+  padding: 10px 20px;
   padding-left: 0;
 }
 h2,
@@ -247,7 +247,7 @@ footer p {
     color: white;
   }
 }
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 768px) {
   // main {
   //   margin: 10vh;
   // }
@@ -302,10 +302,25 @@ footer p {
     color: #e19200;
   }
   main {
+    margin: 15vh 0;
+  }
+
+  footer {
+    padding-top: 10px;
+    background-color: black;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
     display: flex;
     flex-direction: column;
+    color: white;
     align-items: center;
+    font-size: 12px;
   }
+
   header {
     height: 150px;
     padding: 10px 0;
@@ -331,8 +346,10 @@ footer p {
 main .card {
   background-color: #e19200;
   width: 300px;
-  height: 300px;
-  border: 3px solid #e19200;
+
+  height: fit-content;
+
+
   border-radius: 10px;
   margin: 10px;
   display: flex;
@@ -348,33 +365,23 @@ main .card {
   text-align: center;
 }
 
-// .button-container {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin-top: 20px;
-//   width: 100%;
-// }
 
-// .menu-button {
-//   font-size: 1.2rem;
-//   background-color: white;
-//   width: 150px;
-//   height: 70px;
-//   display: flex;
-//   border-radius: 15px;
-//   justify-content: center;
-//   align-items: center;
-//   margin: 10px;
-// }
+.menu h2 {
+  color: #e19200;
+  text-align: center;
+}
 
-// .menu-button-link {
-//   text-decoration: none;
-//   color: #000;
-// }
+
+
+
+
+.container-menu a {
+  text-decoration: none;
+}
 
 @media screen and (min-width: 993px) {
   .container-menu {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }

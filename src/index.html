@@ -1,28 +1,47 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/main.scss" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script
-      src="https://kit.fontawesome.com/7581c6ed86.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="icon" href="./images/logo.png">
-    <title>Pixel Burger</title>
-  </head>
-  <body>
 
-    <header>
-      <nav>
-        <div>
-          <img src="./images/logo.png" alt="" />
-          <h1>Pixel Burger</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/main.scss" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/7581c6ed86.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="./images/logo.png">
+  <title>Pixel Burger</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div>
+        <img src="./images/logo.png" alt="" />
+        <h1>Pixel Burger</h1>
+      </div>
+      <a href="./pages/phone-menu.html"><i class="fa-solid fa-bars menu-icon fa-xl" style="color: #FFFFFF;"></i></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="./pages/menu.html">Menu</a></li>
+        <li><a href="./pages/about.html">About</a></li>
+        <li><a href="./pages/findus.html">Find Us</a></li>
+        <li><a href="./pages/gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="carousel-section">
+    <div id="carouselExampleSlidesOnly" class="carousel slide col-11 container " data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/burg1.png" class="d-block w-100" alt="..." />
         </div>
+
         <a href="./pages/phone-menu.html"><i class="fa-solid fa-bars menu-icon fa-xl" style="color: #ffffff;"></i></a>
         <ul>
           <li><a href="#">Home</a></li>
@@ -61,43 +80,36 @@
               style="width: 100%; "
               class="card-img"
             />
+
             <div class="card-container">
               <h4><b>Html Burger</b></h4>
-              <p>Lorem ipfgsum dfdolor sit amet.</p>
+              <p>Our main Burger made with the original Pixel Burger©.</p>
             </div>
           </div>
         </a>
-          <a href="./pages/menu.html">
-            <div class="card card2">
-              <img
-              src="./images/burg2.png"
-              alt="js burger"
-              style="width: 100%;"
-              class="card-img"
-            />
+
+        <a href="./pages/menu.html">
+          <div class="card card2">
+            <img src="./images/burg2.png" alt="js burger" style="width: 100%;" class="card-img" />
             <div class="card-container">
               <h4><b>JS Burger</b></h4>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            </div>
-        </a>
-          <a href="./pages/menu.html">
-          <div class="card card3">
-            <img
-              src="./images/burg3.png"
-              alt="Bootstrap burger"
-              style="width: 100%;"
-              class="card-img"
-            />
-            <div class="card-container">
-              <h4><b>Bootstrap Burger</b></h4>
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>The interactive burger that you can develop on yourself
+        </p>
+      </div>
+      </div>
+      </a>
+      <a href="./pages/menu.html">
+        <div class="card card3">
+          <img src="./images/burg3.png" alt="CSS burger" style="width: 100%;" class="card-img" />
+          <div class="card-container">
+            <h4><b>CSS Burger</b></h4>
+            <p>Our style burger made with the most elaborate</p>
 
-            </div>
-            </a>
+
           </div>
         
         </div>
+
       </section>
       
         
@@ -135,9 +147,5 @@
       <p>©PixelBurger-ALL RIGHTS RESERVED</p>
     </footer>
 
-      
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-  </body>
+
 </html>
