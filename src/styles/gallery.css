@@ -99,6 +99,7 @@ footer ul {
   display: flex;
   justify-content: space-around;
   width: 400px;
+  padding: 0;
 }
 @media screen and (min-width: 993px) {
   main {

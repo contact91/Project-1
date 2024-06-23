@@ -53,11 +53,6 @@ header h1 {
   color: white;
   margin: 0;
 }
-// main .carousel-section {
-//   width: 100%;
-//   overflow: hidden;
-//   margin-top: 20px;
-// }
 nav ul {
   display: none;
 }
@@ -206,12 +201,6 @@ footer p {
 .menu h2 {
   color: white;
 }
-.menu a:hover {
-  text-decoration: none;
-  transform: scale(1.4);
-  transition: 1s;
-  z-index: 1;
-}
 
 @media (max-width: 992px) {
   .socialmedia a {
@@ -248,12 +237,6 @@ footer p {
   }
 }
 @media screen and (min-width: 993px) {
-  // main {
-  //   margin: 10vh;
-  // }
-  // main .carousel-section {
-  //   margin-top: 30px;
-  // }
   .menu-button {
     display: none;
   }
@@ -266,13 +249,15 @@ footer p {
     flex-direction: column;
     align-items: center;
   }
-
+  .menu a:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: 1s;
+    z-index: 1;
+  }
   .carousel-section {
     margin-top: 150px;
   }
-  // section {
-  //   margin: 60px 0;
-  // }
   header h1 {
     font-size: 3vh;
     color: white;
@@ -301,10 +286,6 @@ footer p {
   nav a:hover {
     color: #e19200;
   }
-  main {
-    margin: 15vh 0;
-  }
-
   footer {
     padding-top: 10px;
     background-color: black;
@@ -346,9 +327,8 @@ footer p {
 main .card {
   background-color: #e19200;
   width: 300px;
-
+  border: 5px solid #e19200;
   height: fit-content;
-
 
   border-radius: 10px;
   margin: 10px;
@@ -365,15 +345,10 @@ main .card {
   text-align: center;
 }
 
-
 .menu h2 {
   color: #e19200;
   text-align: center;
 }
-
-
-
-
 
 .container-menu a {
   text-decoration: none;

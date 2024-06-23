@@ -55,15 +55,15 @@ nav ul {
   margin: 0;
 }
 main {
-  margin: 15vh 0;
+  margin: 170px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 footer {
-  padding-top: 15px;
+  padding-top: 10px;
   background-color: black;
-  height: 10vh;
+  height: 70px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -73,7 +73,9 @@ footer {
   flex-direction: column;
   color: white;
   align-items: center;
+  font-size: 12px;
 }
+
 footer a {
   color: white;
 }
@@ -85,6 +87,7 @@ footer ul {
   display: flex;
   justify-content: space-around;
   width: 400px;
+  padding: 0;
 }
 @media screen and (min-width: 993px) {
   footer {
@@ -124,10 +127,6 @@ footer ul {
     list-style: none;
     width: 70%;
     justify-content: space-around;
-  }
-
-  header {
-    height: 15vh;
   }
   nav {
     display: flex;
@@ -269,7 +268,6 @@ footer ul {
   background-color: #202020;
   color: #e19200;
   width: 80vw;
-  margin-top: 70px;
   overflow: hidden;
   margin-bottom: 30px;
 }
@@ -277,7 +275,6 @@ footer ul {
 .about-text {
   display: flex;
   flex-direction: column;
-  // width: 50%;
   height: 50%;
   margin-top: 20px;
   text-align: center;

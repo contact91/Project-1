@@ -16,7 +16,6 @@ body p {
 }
 
 header {
-
   background-color: black;
   height: 70px;
   position: fixed;
@@ -30,7 +29,6 @@ nav img {
   height: 50px;
 }
 nav {
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,7 +58,6 @@ main {
   margin: 90px 0;
 }
 footer {
-
   padding-top: 10px;
   background-color: black;
   height: 70px;
@@ -86,6 +83,7 @@ footer ul {
   display: flex;
   justify-content: space-around;
   width: 400px;
+  padding: 0;
 }
 @media screen and (min-width: 993px) {
   header h1 {
@@ -252,10 +250,9 @@ main {
 
 .menu-sec {
   width: 70vw;
-
 }
 
-.card-sec{
+.card-sec {
   width: 70vw;
   display: flex;
   flex-direction: column;
@@ -301,25 +298,21 @@ main {
   text-shadow: 3px 3px white, -3px -3px black;
 }
 
-
-
 .menu-pic {
   width: 100%;
 }
 
-.ordernow{
+.ordernow {
   text-align: right;
-  
 }
 
-.ordernow a{
+.ordernow a {
   text-decoration: none;
   color: white;
   display: inline-block;
-
 }
 
-.ordernow button{
+.ordernow button {
   background-color: #920e00;
   position: absolute;
   bottom: -50px;
@@ -330,53 +323,49 @@ main {
   padding-bottom: 15px;
   height: 130px;
   border: none;
-  border-radius: 50%
-
+  border-radius: 50%;
 }
 
-.ordernow button:hover{
+.ordernow button:hover {
   background-color: white;
   box-shadow: 0 0 10px #202020;
 }
 
-.ordernow button:hover a{
+.ordernow button:hover a {
   color: #920e00;
   font-size: bold;
 }
 
-select{
-border-radius: 5px;
+select {
+  border-radius: 5px;
 }
 
-header i{
+header i {
   font-size: 35px;
 }
 
-@media (min-width: 993px){
+@media (min-width: 993px) {
+  main {
+    margin-top: 15vh;
+  }
 
-main{
-  margin-top: 15vh;
-}
+  .card-menu {
+    flex-direction: row;
+    padding-bottom: 0;
+    width: 100%;
+  }
 
+  .card-menu p,
+  label,
+  h4 {
+    font-size: 1.5rem;
+  }
 
+  .card-menu h3 {
+    font-size: 3rem;
+  }
 
-.card-menu{
-  flex-direction: row;
-  padding-bottom: 0;
-  width: 100%;
-
-}
-
-.card-menu p, label, h4{
-  font-size: 1.5rem;
-}
-
-.card-menu h3{
-  font-size: 3rem;
-}
-
-.menu-pic{
- width:50%
-}
-
+  .menu-pic {
+    width: 50%;
+  }
 }
