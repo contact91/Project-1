@@ -249,7 +249,10 @@ main {
 }
 
 .menu-sec {
-  width: 70vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-sec {
@@ -291,11 +294,11 @@ main {
 .menu-title {
   background-color: rgba(0, 0, 0, 0.678);
   margin-bottom: 5vh;
-  margin-top: 5vh;
+  width: 100%;
   color: #e19200;
   text-align: center;
-  font-size: 5rem;
-  text-shadow: 3px 3px white, -3px -3px black;
+  font-size: 3rem;
+  text-shadow: 1px 1px white, -1px -1px black;
 }
 
 .menu-pic {
@@ -308,8 +311,12 @@ main {
 
 .ordernow a {
   text-decoration: none;
+  font-family: Roboto Mono, monospace;
   color: white;
   display: inline-block;
+  position: absolute;
+  top: 22px;
+  left: 15px;
 }
 
 .ordernow button {
@@ -336,8 +343,28 @@ main {
   font-size: bold;
 }
 
+form{
+  display: inline-block;
+  width: 80%;
+  font-family: Roboto Mono, monospace;
+}
+
+label{
+  font-weight: bold;
+}
+
+.form-div{
+  display: flex;
+  justify-content: space-between;
+}
+
 select {
   border-radius: 5px;
+  width: 100px;
+  height: max-content;
+  color: #3f0600;
+  background-color: #ffffffa6;
+
 }
 
 header i {
@@ -358,7 +385,7 @@ header i {
   .card-menu p,
   label,
   h4 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .card-menu h3 {
@@ -367,5 +394,9 @@ header i {
 
   .menu-pic {
     width: 50%;
+  }
+  
+  select{
+    width: 100px;
   }
 }
